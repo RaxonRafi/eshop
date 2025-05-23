@@ -1,12 +1,14 @@
-import React from 'react'
-import Topbar from './topbar'
+import React from "react";
+import Topbar from "./topbar";
+import Navbar from "./navbar";
 
 const HeaderComponentsLayout = () => {
   return (
     <>
-        <Topbar/>
+      <Topbar />
+      <Navbar />
     </>
-  )
-}
+  );
+};
 
-export default HeaderComponentsLayout
+export default HeaderComponentsLayout;
