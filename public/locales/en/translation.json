@@ -3,5 +3,11 @@
     "search_products": "Search Products...",
     "cart": "Cart",
     "user": "User",
-    "account": "Account"
+    "account": "Account",
+    "blog": "Blog",
+    "contact": "Contact",
+    "AllCategories": "All Categories",
+    "products": "Products",
+    "Best_Seller": "Best Seller",
+    "New_Arrival": "New Arrivals"
 }
