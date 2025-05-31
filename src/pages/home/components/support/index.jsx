@@ -7,7 +7,6 @@ const SupportSection = () => {
         {
             supportData?.map((item, index) => {
                 const Icon = item.icon;
-
                 return (
                     <div key={index} className='flex items-center gap-x-5'>
                         <span className='text-black01'>

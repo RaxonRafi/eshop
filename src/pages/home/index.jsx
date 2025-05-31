@@ -4,6 +4,7 @@ import Container from '../../globalComponents/Container'
 import { Helmet } from 'react-helmet-async'
 import Banner from './components/Banner'
 import SupportSection from './components/support'
+import FeaturedProducts from './components/faturedProducts'
 
 const Home = () => {
  
@@ -15,6 +16,7 @@ const Home = () => {
       <Container>
         <Banner/>
         <SupportSection/>
+        <FeaturedProducts/>
       </Container>
     </>
   )
