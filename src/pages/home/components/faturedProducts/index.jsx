@@ -3,7 +3,7 @@ import Container from '../../../../globalComponents/Container';
 import { Link } from 'react-router-dom';
 import { HiArrowLongRight } from 'react-icons/hi2';
 import ProductCard from '../../../../globalComponents/productCards';
-import productImage from "../../../../assets/images/products/product-image.webp";
+import { FeaturedProductsData } from './featuredData';
 
 const FeaturedProducts = () => {
 
@@ -11,7 +11,7 @@ const FeaturedProducts = () => {
   return (
     <Container>
         <div className='mt-[80px]'>
-            <div className='flex items-center justify-between '>
+            <div className='flex items-center justify-between'>
                 <h3 className='font-poppins text-[36px] font-semibold text-black01'>{t('Featured_Products')}</h3>
                 <Link to="/product" className='flex items-center gap-x-2 font-montserrat text-base font-bold text-orange group'>
                     {t("view_all")}{" "}
@@ -21,11 +21,23 @@ const FeaturedProducts = () => {
                    
                 </Link>
             </div>
-            <ProductCard 
-            image={productImage} 
-            discount={true}
-            pName={"Product Name Example"}
-            />
+            <div className='grid grid-cols-5 gap-x-5 mt-[30px]'>
+                {
+                    FeaturedProductsData.map((product)=>(
+                        <ProductCard 
+                            image={product?.image} 
+                            pName={product?.pName}
+                            ratings={product?.ratings}
+                            pCategory={product?.pCategory}
+                            discount={product?.discount}
+                            totalRatings={product?.totalRatings}
+                            price={product?.price}
+                            key={product?.id}
+                        />
+                    ))
+                }
+            </div>
+
         </div>
     </Container>
   )
