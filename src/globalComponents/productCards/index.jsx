@@ -10,7 +10,7 @@ import { IoShareSocialOutline } from "react-icons/io5"
 const ProductCard = ({image,discount,pCategory,pName,ratings,totalRatings,price}) => {
   return (
     <>
-    <div className='relative group border border-transparent hover:border-black100 p-6 rounded-[10px]'>
+    <div className='relative group border border-transparent hover:border-black100 p-6 rounded-[10px] w-[285px]'>
         <div className='w-full h-[214px] overflow-hidden rounded-[10px]'>
             <img src={image} alt="Product-Image" className='w-full h-full '/>
 
