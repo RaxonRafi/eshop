@@ -5,9 +5,10 @@ import { HiArrowLongRight } from 'react-icons/hi2';
 import ProductCard from '../../../../globalComponents/productCards';
 import { FeaturedProductsData } from './featuredData';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import NextButton from './NextButton';
-import PrevButton from './PrevButton';
+
 import { Navigation } from 'swiper/modules';
+import NextButton from '../../../../globalComponents/NextButton';
+import PrevButton from '../../../../globalComponents/PrevButton';
 
 const FeaturedProducts = () => {
 

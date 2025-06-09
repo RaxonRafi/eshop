@@ -7,6 +7,7 @@ import SupportSection from './components/support'
 import FeaturedProducts from './components/faturedProducts'
 import Overview from './components/Overview'
 import NewProducts from './components/newProducts'
+import SpringSale from './components/springsale'
 
 const Home = () => {
  
@@ -22,6 +23,7 @@ const Home = () => {
         <Overview/>
         <NewProducts/>
       </Container>
+      <SpringSale/>
     </>
   )
 }
