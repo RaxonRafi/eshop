@@ -8,6 +8,9 @@ import FeaturedProducts from './components/faturedProducts'
 import Overview from './components/Overview'
 import NewProducts from './components/newProducts'
 import SpringSale from './components/springsale'
+import BestSeller from './components/bestseller'
+import FaqSection from './components/FAQ'
+import TechTalks from './components/techTalks'
 
 const Home = () => {
  
@@ -24,6 +27,13 @@ const Home = () => {
         <NewProducts/>
       </Container>
       <SpringSale/>
+      <Container>
+        <BestSeller/>
+      </Container>
+      <FaqSection/>
+      <Container>
+        <TechTalks/>
+      </Container>
     </>
   )
 }
