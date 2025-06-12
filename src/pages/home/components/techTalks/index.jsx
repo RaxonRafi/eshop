@@ -6,7 +6,7 @@ import { TechTalksData } from './TechTalksData';
 
 const TechTalks = () => {
       const { t } = useTranslation();
-      const path = useLocation().pathname;
+      const {pathname} = useLocation();
   return (
     <>
         <div className='mt-20'>
@@ -30,11 +30,12 @@ const TechTalks = () => {
                     </span>
                 </Link>
             </div>
-            <div className='grid grid-cols-3 gap-x-4 mt-12'>
+            <div className='grid grid-cols-3 gap-x-10 mt-12'>
                 { 
                     TechTalksData.slice(0,3).map((blog)=>(
                         <BlogCard
-                            image={blog.image}
+                            pathname={pathname}
+                            {...blog}
                         />
                     ))
                 }

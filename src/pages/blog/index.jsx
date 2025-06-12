@@ -1,8 +1,13 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
+import BlogCard from '../../globalComponents/blogCard';
 
 const Blog = () => {
+  const {pathname} = useLocation();
   return (
-    <div>Blog</div>
+    <div>
+      <BlogCard pathname={pathname}/>
+    </div>
   )
 }
 
