@@ -11,6 +11,8 @@ import SpringSale from './components/springsale'
 import BestSeller from './components/bestseller'
 import FaqSection from './components/FAQ'
 import TechTalks from './components/techTalks'
+import Companies from './components/Companies'
+import Subscribe from './components/subscribe'
 
 const Home = () => {
  
@@ -33,6 +35,8 @@ const Home = () => {
       <FaqSection/>
       <Container>
         <TechTalks/>
+        <Companies/>
+        <Subscribe/>
       </Container>
     </>
   )
