@@ -7,7 +7,7 @@ const Subscribe = () => {
             <div className="bg-red py-[114px] pl-[100px] bg-linear-to-r from-white02 to-gray">
                 <SubscribeForm/>
             </div>
-            <div className="bg-gray">2</div>
+            <div className="bg-gray"></div>
         </div>
     </section>
   )
