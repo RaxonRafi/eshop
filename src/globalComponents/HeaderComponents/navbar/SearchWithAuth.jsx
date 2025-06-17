@@ -12,7 +12,7 @@ const SearchWithAuth = () => {
         <input
           placeholder={t("search_products")}
           type="text"
-          className="outline-none"
+          className="outline-none w-[90%]"
         />
         <CiSearch size={20} />
       </div>
