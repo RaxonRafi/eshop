@@ -6,17 +6,37 @@ import SpringProductCard from "./SpringProductCard";
 import { SpringSaleData } from "./SpringSaleData";
 
 const SpringRight = () => {
+  const breakpoints = {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 1,
+    },
+    1200: {
+      slidesPerView: 2,
+    },
+  };
   return (
     <div className="relative">
-      <div className="absolute top-2/4 -translate-y-2/4 -right-5 z-30 swiper-button-next-spring">
+      <div className="absolute top-2/4 -translate-y-2/4 right-0 3xl:-right-5 z-30  swiper-button-next-spring">
         <NextButton />
       </div>
-      <div className="absolute top-2/4 -translate-y-2/4 -left-5 z-30 swiper-button-prev-spring">
+      <div className="absolute top-2/4 -translate-y-2/4 left-0 3xl:-left-5 z-30 swiper-button-prev-spring">
         <PrevButton />
       </div>
       <Swiper
         spaceBetween={50}
         slidesPerView={2}
+        breakpoints={breakpoints}
         modules={[Navigation]}
         navigation={{
           nextEl: ".swiper-button-next-spring",

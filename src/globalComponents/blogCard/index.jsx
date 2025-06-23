@@ -8,7 +8,7 @@ const BlogCard = ({pathname, ...props}) => {
   const HomePageCard = ()=>(
       isHomePage &&  (
         <>
-          <div className="border border-transparent hover:border hover:border-black100 hover:p-[45px] hover:rounded-[25px] transition-all duration-300">
+          <div className="border border-transparent hover:border hover:border-black100 hover:p-[20px] lg:hover:p-[45px] hover:rounded-[25px] transition-all duration-300">
             <div className="max-h-[406px] rounded-[25px] overflow-hidden">
                 <img
                     src={image} 
@@ -17,7 +17,7 @@ const BlogCard = ({pathname, ...props}) => {
                 />
             </div>
             <div className="mt-8">
-              <h5 className="font-poppins font-semibold text-[24px] text-black01">{title}</h5>
+              <h5 className="font-poppins font-semibold text-lg lg:text-[24px] text-black01">{title}</h5>
             </div>
             <div className="flex items-center justify-between mt-8">
               <div className="py-2 px-2.5 bg-orange rounded-[10px]">

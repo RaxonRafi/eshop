@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import { Logo } from "../../../assets/svg/Logo";
 import Container from "../../Container";
-import SearchWithAuth from "../navbar/SearchWithAuth";
 import { useTranslation } from "react-i18next";
 import { CiSearch } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CustomDrawer from "../../drawer";
 import SocialsWithLang from "../topbar/SocialsWithLang";
 import NavListItems from "./NavListItems";
@@ -13,6 +12,17 @@ import NavListItems from "./NavListItems";
 const MobileNavbar = () => {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
+
+  useEffect(()=>{
+    const handleResize=()=>{
+      if(window.innerWidth > 991){
+        setOpen(false)
+      }
+    }
+    window.addEventListener('resize',handleResize)
+
+    return () =>  window.removeEventListener('resize',handleResize)
+  },[])
   return (
     <>
       <div className="border-b-1 border-b-black100">

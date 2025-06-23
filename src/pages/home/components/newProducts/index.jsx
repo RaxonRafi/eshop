@@ -1,38 +1,37 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Container from '../../../../globalComponents/Container'
-import { Link } from 'react-router-dom'
-import { HiArrowLongRight } from 'react-icons/hi2'
 import AllCategoryMenu from '../../../../globalComponents/HeaderComponents/menubar/AllCategories'
-import { MdKeyboardArrowDown } from 'react-icons/md'
 import { FeaturedProductsData } from '../faturedProducts/featuredData'
 import ProductCard from '../../../../globalComponents/productCards'
 import { Button } from 'antd'
 
 const NewProducts = () => {
+
     const [initialData, setInitialData] = useState(5)
     const {t} = useTranslation()
 
     const loadMore = () => {
         setInitialData((prev) => prev + 5)
     }
+    
   return (
     <section className='mt-[80px]'>
         <Container>
             <div className='relative'>
                 <div className='flex items-center justify-between'>
-                    <h3 className='font-poppins text-[36px] font-semibold text-black01'>{t('New_Products')}</h3>
+                    <h3 className='font-poppins text-lg lg:text-[36px] font-semibold text-black01'>{t('New_Products')}</h3>
 
                     <div className='flex items-center gap-x-2 w-[50%] justify-end'>
-                    <span className='font-montserrat font-normal text-base'>{t('Sort_By')}:   
+                    <span className='font-montserrat font-normal text-sm lg:text-base'>{t('Sort_By')}:   
                     </span>
-                    <div className='w-[30%]'>    
-                        <AllCategoryMenu className="font-montserrat font-bold text-base text-orange cursor-pointer w-full flex justify-between items-baseline" icons={true}/>
+                    <div className='w-fit lg:w-[30%]'>    
+                        <AllCategoryMenu className="font-montserrat font-bold text-sm lg:text-base text-orange cursor-pointer w-full flex justify-between items-center" icons={true}/>
                     </div>
                     </div>
                 </div>
             </div>
-            <div className='grid grid-cols-5 gap-x-5 gap-y-10 mt-[30px]'>
+            <div className='grid grid-cols-1 md:grid lg:grid-cols-5 gap-x-5 gap-y-10 mt-[30px]'>
             {
                 FeaturedProductsData?.slice(0,initialData)?.map((product)=>(
                     <ProductCard 

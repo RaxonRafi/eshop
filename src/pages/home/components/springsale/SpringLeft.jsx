@@ -9,14 +9,14 @@ const SpringLeft = () => {
   return (
     <>
         <div>
-            <h3 className='font-poppins font-bold text-[56px] text-black01'>{t('spring_sale')}</h3>
+            <h3 className='font-poppins font-bold text-2xl md:text-[56px] text-black01'>{t('spring_sale')}</h3>
             <div className='mt-5'>
                 <Countdown date={Date.now() + 1000000} renderer={RenderCountDown} />
             </div>
             <CommonButton 
-            className='!bg-orange !px-10 !h-11 !border-none !mt-[60px]'
+            className='!bg-orange !px-10 !h-12 !border-none !mt-[40px] lg:!mt-[60px]'
             >
-                <span className='font-montserrat font-bold text-lg text-white'>Shop now</span>
+                <span className='font-montserrat font-bold text-base lg:text-lg text-white'>Shop now</span>
             </CommonButton>
         </div>
     </>

@@ -1,4 +1,3 @@
-import React from 'react'
 import HeaderComponentsLayout from '../../HeaderComponents'
 
 const Header = () => {
