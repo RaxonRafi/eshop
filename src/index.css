@@ -102,6 +102,7 @@
     right: 0;
   }
 
+
   @media (max-width:575) {
     .custom-collapse .ant-collapse-header-text{
       font-size: 15px !important;
