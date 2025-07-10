@@ -1,6 +1,7 @@
 import Container from "../../globalComponents/Container";
 import LeftProductComponents from "./components/LeftProductComponents";
 import RightProductComponents from "./components/RightProductComponents";
+import Subscribe from "./components/subscribe/Subscribe";
 
 const Product = () => {
   return (
@@ -10,6 +11,9 @@ const Product = () => {
         <LeftProductComponents/>
         <RightProductComponents/>
 
+      </div>
+      <div>
+        <Subscribe />
       </div>
     </Container>
     </>
